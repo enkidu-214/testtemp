@@ -1,0 +1,16 @@
+.NorRadio{
+  .el-radio__inner::after{
+    background-color: #012135 ;
+  }
+  .el-radio__label{
+    color: #f0f0f0;
+    font-size: 16px;
+  }
+  .el-radio__input.is-checked+.el-radio__label{
+    color: #f0f0f0;
+  }
+  .el-radio__inner{
+    background-color: #012135;
+    border: 1px solid #1199FF;
+  }
+}

@@ -1,0 +1,44 @@
+.NorTableMin {
+  .el-table .el-table__body tr.el-table__row td {
+    background-color: #003158 !important;
+    border: none;
+    color: #f0f0f0;
+  }
+  .el-table--striped .el-table__body tr.el-table__row--striped td {
+    background-color: #004074 !important;
+    border: none;
+    color: #f0f0f0;
+  }
+  .el-table--enable-row-hover .el-table__body tr:hover > td{
+    background-color: #415c85 !important;
+    border: none;
+  }
+  .el-table__expanded-cell{
+    background-color: #004074 !important;
+    border: none;
+  }
+  .el-table::before{
+    background-color: unset !important;
+  }
+  .el-table td.el-table__cell, .el-table th.el-table__cell.is-leaf{
+    background-color: #023757;
+  }
+  // .el-table th.el-table__cell {
+  //   color: #F0F0F0 !important;
+  //   height: 30px !important;
+  //   background-color: unset !important;
+  //   font-size: 14px !important;
+  //   border: none !important;
+  // }
+  // .el-table__row .el-table__cell{
+  //   height: 30px !important;
+  //   padding: 0px !important;
+  //   border: none !important;
+  // }
+  // .current-row{
+  //   height: 30px !important;
+  //   padding: 0px !important;
+  //   background-color: #1a64ca !important;
+  //   border: none !important;
+  // }
+}

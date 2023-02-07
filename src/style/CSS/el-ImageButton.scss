@@ -1,0 +1,30 @@
+.NorImageButton{
+  .el-button{
+    background-color: #023757;
+    border: 1px solid #1199FF;
+    padding: 0;
+    margin: 0;
+    color: #f0f0f0;
+    font-size: 22px;
+  }
+  .el-button:hover{
+    background-color: #FFFFFF11;
+    border: 1px solid #1199FF;
+    color: #f0f0f0;
+  }
+  .el-button:active{
+    border:1px solid  #E0E0E0AA;
+    color: #f0f0f0;
+    margin-top: 2px;
+    margin-left: 2px !important;
+  }
+  .el-button+.el-button{
+    margin-left: 0px;
+  }
+  .el-button:focus{
+    background-color: #023757;
+  }
+  .el-button.is-disabled, .el-button.is-disabled:focus, .el-button.is-disabled:hover{
+    background-color: #888888AA;
+  }
+}

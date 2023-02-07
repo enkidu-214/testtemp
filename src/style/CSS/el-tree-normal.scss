@@ -1,0 +1,18 @@
+.NorTree{
+  .el-tree{
+    color: #f0f0f0;
+    background-color: #003057;
+  }
+  .is-current{
+    background-color: #3399FFFF !important;
+  }
+  .el-tree-node__content:hover{
+    background-color: rgba($color: #225a74, $alpha: 0.8) ;
+  }
+  .el-tree-node:focus>.el-tree-node__content{
+    background-color: unset;
+  }
+  .el-tree-node__label{
+    font-size: 16px;
+  }
+}

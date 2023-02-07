@@ -1,0 +1,5 @@
+.el-input .el-input__inner {
+  height: 25px !important;
+  padding: 2px;
+  text-align: center;
+}

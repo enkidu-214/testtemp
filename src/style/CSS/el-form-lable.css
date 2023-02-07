@@ -1,0 +1,58 @@
+.el-form-item__label{
+  color: #f0f0f0 !important;
+  font-size: 16px !important;
+  font-weight: 100;
+}
+.el-input .el-input__inner {
+  height: 25px !important;
+  background-color: #012135 !important;
+  border-color: #1582c5;
+}
+.el-select {
+  height: 100%;
+  width: 100%;
+}
+.el-input .el-input__inner {
+  height: 25px !important;
+  width: 100% !important;
+  background-color: #012942;
+  color: #f0f0f0;
+  border-color: #1476b3;
+}
+.el-select-dropdown {
+  background-color: #023757 !important;
+  color: #f0f0f0 !important;
+  border-color: rgb(9, 165, 226) !important
+}
+.el-select-dropdown__item {
+  color: #f0f0f0 !important;
+}
+.el-select-dropdown__item:hover {
+  background-color: rgba(239, 239, 239, 0.3) !important;
+}
+.el-select-dropdown__item.selected {
+  background-color: #1199ff !important;
+}
+.el-scrollbar {
+  border-color: rgb(9, 165, 226) !important
+}
+.el-select-dropdown__item.hover{
+  background-color: rgba(239, 239, 239, 0.3) !important;
+}
+
+.el-input__icon {
+  line-height: normal !important;
+}
+
+.el-checkbox__inner{
+  width: 25px !important;
+  height: 25px !important;
+  border: 1px solid #1476b3 !important;
+  background-color: #012135 !important;
+}
+.el-checkbox__inner::after{
+  height: 20px !important;
+  width: 8px !important;
+  left: 8px !important;
+  position: 0px;
+}

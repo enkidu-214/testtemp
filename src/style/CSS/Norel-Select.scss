@@ -1,0 +1,52 @@
+.norSelect{
+  .el-select {
+    height: 100%;
+    width: 100%;
+  }
+  .el-input .el-input__inner {
+    height: 25px !important;
+    width: 100% !important;
+    background-color: #012942;
+    color: #f0f0f0;
+    border-color: #1476b3;
+  }
+  .el-input__suffix {
+    height: 23px !important;
+    width: 23px !important;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #001224;
+    border: 1px solid;
+    right: 0px !important;
+    border-color: #1476b3;
+    border-left-color: gray;
+  }
+  .el-input__icon {
+    height: 25px;
+    position: relative;
+    top: 8px;
+  }
+  .is-reverse {
+    height: 25px;
+    position: relative;
+    top: -8px;
+  }
+  .el-select-dropdown {
+    background-color: #023757 !important;
+    color: #f0f0f0 !important;
+    border-color: rgb(9, 165, 226) !important
+  }
+  .el-select-dropdown__item {
+    color: #f0f0f0 !important;
+  }
+  
+  .el-select-dropdown__item.selected {
+    background-color: #1199ff !important;
+  }
+  .el-select-dropdown__item:hover {
+    background-color: rgba(239, 239, 239, 0.3) !important;
+  }
+  .el-scrollbar {
+    border-color: rgb(9, 165, 226) !important
+  }
+}

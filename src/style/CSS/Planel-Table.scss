@@ -1,0 +1,13 @@
+.PlanelTable{
+  .el-table .el-table__body tr.el-table__row td {
+    background-color: #002d52 !important;
+    color: #f0f0f0;
+  }
+  .el-table--striped .el-table__body tr.el-table__row--striped td {
+    background-color: #003968 !important;
+    color: #f0f0f0;
+  }
+  .el-table--enable-row-hover .el-table__body tr:hover > td{
+    background-color: #385785 !important;
+  }
+}

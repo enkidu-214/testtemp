@@ -1,0 +1,34 @@
+.Normenu {
+  background: #023757;
+  top: 0px;
+  width: 100%;
+  .el-menu-demo{
+    height: 30px;
+    margin: 10px 0px 10px 0px !important;
+  }
+  .el-menu-demo:not(.el-menu--collapse) {
+    border-bottom: 0;
+    margin-left: 10px !important;
+  }
+  // .el-menu--horizontal>.el-menu-item{
+  //   margin: 10px 2px 10px 2px !important;
+  // }
+  .el-menu-item{
+    margin-right: 4px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    padding-left: 5px !important;
+    padding-right: 15px !important;
+    border-radius: 5px !important;
+    border: #1199FF solid 1px !important;
+    background:linear-gradient(#065893,#023757);
+    font-weight: 100;
+  }
+  .el-menu-item.is-active{
+    background:linear-gradient(#facb52,#8f6305) !important;
+    color: #f0f0f0 !important;
+  }
+  .el-icon-location{
+    margin-right: 2px !important;
+  }
+}

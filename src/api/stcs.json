@@ -1,0 +1,8098 @@
+{
+  "x-generator": "NSwag v13.10.1.0 (NJsonSchema v10.3.3.0 (Newtonsoft.Json v13.0.0.0))",
+  "openapi": "3.0.0",
+  "info": {
+    "title": "AspNetCoreSpa API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/STCS/AddOrUpdateImportantDataInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddOrUpdateImportantDataInfo",
+        "requestBody": {
+          "x-name": "info",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MapImportantDataInfo"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/DelImportantDataInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_DelImportantDataInfo",
+        "parameters": [
+          {
+            "name": "itemID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryImportantDataInfo": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryImportantDataInfo",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/AddOrUpdateAlarmTypeInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddOrUpdateAlarmTypeInfo",
+        "requestBody": {
+          "x-name": "typeInfo",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlarmTypeInfo"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/DelAlarmTypeInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_DelAlarmTypeInfo",
+        "parameters": [
+          {
+            "name": "itemID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryAlarmTypeInfo": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryAlarmTypeInfo",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/AddOrUpdatePreSchemeInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddOrUpdatePreSchemeInfo",
+        "requestBody": {
+          "x-name": "info",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlarmSchemeInfo"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/DelPreSchemeInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_DelPreSchemeInfo",
+        "parameters": [
+          {
+            "name": "preSchemeID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryPreSchemeInfo": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryPreSchemeInfo",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/ConfPreSchemeItemInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_ConfPreSchemeItemInfo",
+        "parameters": [
+          {
+            "name": "alarmSchemeID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "requestBody": {
+          "x-name": "info",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/AlarmSchemeItem"
+                }
+              }
+            }
+          },
+          "required": true,
+          "x-position": 2
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryPreSchemeItemInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryPreSchemeItemInfo",
+        "parameters": [
+          {
+            "name": "schemeID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/ConfigAlarmSrcRelAlarmType": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_ConfigAlarmSrcRelAlarmType",
+        "parameters": [
+          {
+            "name": "AlarmSourceID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "requestBody": {
+          "x-name": "conf",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/AlarmSourceRelTypeInfo"
+                }
+              }
+            }
+          },
+          "required": true,
+          "x-position": 2
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryAlarmSrcRelAlarmType": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryAlarmSrcRelAlarmType",
+        "parameters": [
+          {
+            "name": "resID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/ConfAlarmLinkageInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_ConfAlarmLinkageInfo",
+        "parameters": [
+          {
+            "name": "alarmSourceID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "requestBody": {
+          "x-name": "conf",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/AlarmLinkInfo"
+                }
+              }
+            }
+          },
+          "required": true,
+          "x-position": 2
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/DelAlarmLinkageInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_DelAlarmLinkageInfo",
+        "parameters": [
+          {
+            "name": "linkID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryAlarmLinkageInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryAlarmLinkageInfo",
+        "parameters": [
+          {
+            "name": "rscId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/AddOrUpdateDevInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddOrUpdateDevInfo",
+        "requestBody": {
+          "x-name": "devInfo",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeviceInfo"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/DelDevInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_DelDevInfo",
+        "parameters": [
+          {
+            "name": "devID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryDevInfos": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryDevInfos",
+        "parameters": [
+          {
+            "name": "devType",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryDevStateInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryDevStateInfo",
+        "parameters": [
+          {
+            "name": "devID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QuerySubDevInfos": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QuerySubDevInfos",
+        "parameters": [
+          {
+            "name": "parentID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QuerySubDevStateInfos": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QuerySubDevStateInfos",
+        "parameters": [
+          {
+            "name": "parentID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryDevStateInfos": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryDevStateInfos",
+        "parameters": [
+          {
+            "name": "devType",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/DevType"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryResourceInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryResourceInfo",
+        "parameters": [
+          {
+            "name": "devId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          },
+          {
+            "name": "devType",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/DevType"
+            },
+            "x-position": 2
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/ModifyResourceInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_ModifyResourceInfo",
+        "requestBody": {
+          "x-name": "resourceInfo",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ResourceInfo"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/ConfDevRelResInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_ConfDevRelResInfo",
+        "parameters": [
+          {
+            "name": "devID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "requestBody": {
+          "x-name": "rel",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/DevRelResourceInfo"
+                }
+              }
+            }
+          },
+          "required": true,
+          "x-position": 2
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryDevRelResInfos": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryDevRelResInfos",
+        "parameters": [
+          {
+            "name": "devID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          },
+          {
+            "name": "relType",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/ResType"
+            },
+            "x-position": 2
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/GetDeviceCallNums": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_GetDeviceCallNums",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/AddOrUpdateAudioFileInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddOrUpdateAudioFileInfo",
+        "requestBody": {
+          "x-name": "info",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FileData"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/DelAudioFileInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_DelAudioFileInfo",
+        "parameters": [
+          {
+            "name": "fileName",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryAudioFileInfos": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryAudioFileInfos",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/GetDeviceAudioFileInfos": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_GetDeviceAudioFileInfos",
+        "parameters": [
+          {
+            "name": "devID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/RemoveDeviceAudioFileInfos": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_RemoveDeviceAudioFileInfos",
+        "parameters": [
+          {
+            "name": "devID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "requestBody": {
+          "x-name": "audios",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "required": true,
+          "x-position": 2
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryMidisPreviewInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryMidisPreviewInfo",
+        "parameters": [
+          {
+            "name": "devID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryCurrentShootingPlan": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryCurrentShootingPlan",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryCurrentShootingInfo/{targetIdx}": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryCurrentShootingInfo",
+        "parameters": [
+          {
+            "name": "targetIdx",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryCurrentShootingResult/{targetIdx}": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryCurrentShootingResult",
+        "parameters": [
+          {
+            "name": "targetIdx",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryPersonShootingResult": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryPersonShootingResult",
+        "parameters": [
+          {
+            "name": "planId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          },
+          {
+            "name": "personId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 2
+          },
+          {
+            "name": "roundIdxIdx",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "x-position": 3
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryPersonShootingResultByPlanId/{planId}": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryPersonShootingResultByPlanId",
+        "parameters": [
+          {
+            "name": "planId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/UpdateProShootingGunTrack": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_UpdateProShootingGunTrack",
+        "parameters": [
+          {
+            "name": "targetIdx",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "x-position": 1
+          }
+        ],
+        "requestBody": {
+          "x-name": "record",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ShootingGunTrackRecord"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 2
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryBraceletDevInfo/{braceletDevName}": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryBraceletDevInfo",
+        "parameters": [
+          {
+            "name": "braceletDevName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryProShootingGunTrack": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryProShootingGunTrack",
+        "parameters": [
+          {
+            "name": "planId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          },
+          {
+            "name": "personID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 2
+          },
+          {
+            "name": "roundIdx",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "x-position": 3
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryShootingPlans": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryShootingPlans",
+        "parameters": [
+          {
+            "name": "count",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryNoRelationShootingPlans": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryNoRelationShootingPlans",
+        "requestBody": {
+          "x-name": "planIds",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryNoRelationShootingPlansWithTime": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryNoRelationShootingPlansWithTime",
+        "parameters": [
+          {
+            "name": "st",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "x-position": 1
+          },
+          {
+            "name": "et",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "x-position": 2
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryShootingPlan": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryShootingPlan",
+        "parameters": [
+          {
+            "name": "planId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryShootingPicPath": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryShootingPicPath",
+        "parameters": [
+          {
+            "name": "planId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          },
+          {
+            "name": "roundIdx",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "x-position": 2
+          },
+          {
+            "name": "targetIdx",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "x-position": 3
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/AddOrUpdateShootingPlan": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddOrUpdateShootingPlan",
+        "requestBody": {
+          "x-name": "plan",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ShootingPlan"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/DelShootingPlan": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_DelShootingPlan",
+        "parameters": [
+          {
+            "name": "planId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/AddOrUpdateShootingPerson": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddOrUpdateShootingPerson",
+        "requestBody": {
+          "x-name": "sp",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ShootingPerson"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/DelShootingPerson": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_DelShootingPerson",
+        "parameters": [
+          {
+            "name": "spId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/AddOrUpdateShootingTarget": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddOrUpdateShootingTarget",
+        "requestBody": {
+          "x-name": "st",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ShootingTarget"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/DelShootingTarget": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_DelShootingTarget",
+        "parameters": [
+          {
+            "name": "stId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/AddOrUpdateShootingTargetAction": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddOrUpdateShootingTargetAction",
+        "requestBody": {
+          "x-name": "staction",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ShootingTargetAction"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/DelShootingTargetAction": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_DelShootingTargetAction",
+        "parameters": [
+          {
+            "name": "stactionId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/AddOrUpdateShootingResultRecord": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddOrUpdateShootingResultRecord",
+        "requestBody": {
+          "x-name": "staction",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ShootingResultRecord"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryTargetModels": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryTargetModels",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/AddOrUpdateTargetModel": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddOrUpdateTargetModel",
+        "requestBody": {
+          "x-name": "targetmodel",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TargetModel"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/DelTargetModel": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_DelTargetModel",
+        "parameters": [
+          {
+            "name": "modelId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryTargetSubjects": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryTargetSubjects",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/AddOrUpdateTargetSubject": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddOrUpdateTargetSubject",
+        "requestBody": {
+          "x-name": "subject",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TargetSubject"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/DelTargetSubject": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_DelTargetSubject",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/SendVoice2Target": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_SendVoice2Target",
+        "requestBody": {
+          "x-name": "targetVoice",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TargetVoiceParam"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/SendMsg2Target": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_SendMsg2Target",
+        "parameters": [
+          {
+            "name": "msg",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            },
+            "x-position": 2
+          }
+        ],
+        "requestBody": {
+          "x-name": "sendInfo",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SendParam"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/FocusAllTpzTarget": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_FocusAllTpzTarget",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/NotifyRecvShootingCountEvent": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_NotifyRecvShootingCountEvent",
+        "requestBody": {
+          "x-name": "info",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ShootingCountInfo"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/StartPracticePlan": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_StartPracticePlan",
+        "parameters": [
+          {
+            "name": "planId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/PrepareRound": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_PrepareRound",
+        "parameters": [
+          {
+            "name": "planId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          },
+          {
+            "name": "roundIdx",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "x-position": 2
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/ForcePrepareRound": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_ForcePrepareRound",
+        "parameters": [
+          {
+            "name": "planId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          },
+          {
+            "name": "roundIdx",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "x-position": 2
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/StopPracticePlan": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_StopPracticePlan",
+        "parameters": [
+          {
+            "name": "planId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/SendTargetCtrlCommand": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_SendTargetCtrlCommand",
+        "requestBody": {
+          "x-name": "info",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TargetCtrlParam"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/SendTargetIdxCtrlCommand": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_SendTargetIdxCtrlCommand",
+        "requestBody": {
+          "x-name": "info",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TargetIdxCtrlParam"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/GetRecordData": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_GetRecordData",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/ResetUserPassword": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_ResetUserPassword",
+        "parameters": [
+          {
+            "name": "userID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/UploadFileDataUploadFileData": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_UploadFileDataUploadFileData",
+        "parameters": [
+          {
+            "name": "fileName",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            },
+            "x-position": 1
+          }
+        ],
+        "requestBody": {
+          "x-name": "buffer",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string",
+                "format": "byte"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 2
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/Login": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_Login",
+        "requestBody": {
+          "x-name": "param",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginParam"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/TargetLogin": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_TargetLogin",
+        "parameters": [
+          {
+            "name": "targetIdx",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "x-position": 1
+          },
+          {
+            "name": "pw",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            },
+            "x-position": 2
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/Logout": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_Logout",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/ClientLoadResFinished": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_ClientLoadResFinished",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/StopServerSystem": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_StopServerSystem",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/SynchronizePersonInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_SynchronizePersonInfo",
+        "requestBody": {
+          "x-name": "devPerson",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DevPersonParam"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/SyncDeviceCallNum": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_SyncDeviceCallNum",
+        "requestBody": {
+          "x-name": "devs",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/SyncMidisPreviewInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_SyncMidisPreviewInfo",
+        "parameters": [
+          {
+            "name": "devID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/SyncAudioDataToDevice": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_SyncAudioDataToDevice",
+        "requestBody": {
+          "x-name": "devAudios",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DevAudioParam"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/SendPtzCmd": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_SendPtzCmd",
+        "requestBody": {
+          "x-name": "cmdInfo",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PtzCmdParam"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/GetStreamUrl": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_GetStreamUrl",
+        "requestBody": {
+          "x-name": "param",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlayParam"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/StartVideo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_StartVideo",
+        "requestBody": {
+          "x-name": "param",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlayParam"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/StopVideo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_StopVideo",
+        "parameters": [
+          {
+            "name": "playHandle",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/ConfirmAlarmEvent": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_ConfirmAlarmEvent",
+        "parameters": [
+          {
+            "name": "eventID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          },
+          {
+            "name": "isMis",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            },
+            "x-position": 2
+          },
+          {
+            "name": "misInfo",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            },
+            "x-position": 3
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/FinishAlarmEvent": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_FinishAlarmEvent",
+        "parameters": [
+          {
+            "name": "eventID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/RestoreAlarm": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_RestoreAlarm",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/TestManualStartAlarm": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_TestManualStartAlarm",
+        "parameters": [
+          {
+            "name": "dev",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/DevType"
+            },
+            "x-position": 2
+          },
+          {
+            "name": "chanIdx",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "x-position": 3
+          },
+          {
+            "name": "alarmType",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            },
+            "x-position": 4
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/RebootDevice": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_RebootDevice",
+        "parameters": [
+          {
+            "name": "devID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/RebootDevices": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_RebootDevices",
+        "requestBody": {
+          "x-name": "devs",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/SendAlarmKeyConfig2Sentry": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_SendAlarmKeyConfig2Sentry",
+        "requestBody": {
+          "x-name": "devIds",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/SendAlarmEvent2Targets": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_SendAlarmEvent2Targets",
+        "parameters": [
+          {
+            "name": "eventId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "requestBody": {
+          "x-name": "devs",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "required": true,
+          "x-position": 2
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/SendProNotifyInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_SendProNotifyInfo",
+        "parameters": [
+          {
+            "name": "info",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            },
+            "x-position": 2
+          }
+        ],
+        "requestBody": {
+          "x-name": "devs",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/ReportPreSchemeHandledRecord": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_ReportPreSchemeHandledRecord",
+        "requestBody": {
+          "x-name": "info",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PreSchemeHandledParam"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/SendMessage": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_SendMessage",
+        "requestBody": {
+          "x-name": "message",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MessageParam"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/GunBulletCtrlDeviceAuthPwdPass": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_GunBulletCtrlDeviceAuthPwdPass",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryCurrentTime": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryCurrentTime",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryServerInfo": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryServerInfo",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryDBInfo": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryDBInfo",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryLoginSessions": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryLoginSessions",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QuerySessions": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QuerySessions",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/AddOrUpdateUserInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddOrUpdateUserInfo",
+        "requestBody": {
+          "x-name": "userInfo",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserInfo"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/DelUserInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_DelUserInfo",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryUserInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryUserInfo",
+        "parameters": [
+          {
+            "name": "userType",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/SessionType"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QuerySingleUserInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QuerySingleUserInfo",
+        "parameters": [
+          {
+            "name": "itemID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/AddOrUpdateUserGroupInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddOrUpdateUserGroupInfo",
+        "requestBody": {
+          "x-name": "groupInfo",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserGroupInfo"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/DelUserGroupInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_DelUserGroupInfo",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryUserGroupInfo": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryUserGroupInfo",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/ConfUserGroupPurview": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_ConfUserGroupPurview",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "requestBody": {
+          "x-name": "items",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/UserGroupPurview"
+                }
+              }
+            }
+          },
+          "required": true,
+          "x-position": 2
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryUserGroupPurview": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryUserGroupPurview",
+        "parameters": [
+          {
+            "name": "groupId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/ConfSysConfigInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_ConfSysConfigInfo",
+        "requestBody": {
+          "x-name": "confInfoList",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/SystemKeyInfo"
+                }
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QuerySysConfigInfos": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QuerySysConfigInfos",
+        "parameters": [
+          {
+            "name": "groupName",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QuerySingleSysConfigInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QuerySingleSysConfigInfo",
+        "parameters": [
+          {
+            "name": "paramKey",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QuerySysGroupInfos": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QuerySysGroupInfos",
+        "parameters": [
+          {
+            "name": "groupName",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/AddOrUpdateSysGroupInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddOrUpdateSysGroupInfo",
+        "requestBody": {
+          "x-name": "groupinfo",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SystemResourceInfo"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/DelSysGroupItem": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_DelSysGroupItem",
+        "parameters": [
+          {
+            "name": "itemId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/ConfSysGroupInfos": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_ConfSysGroupInfos",
+        "parameters": [
+          {
+            "name": "configGroup",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            },
+            "x-position": 1
+          }
+        ],
+        "requestBody": {
+          "x-name": "groupinfo",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/SystemResourceInfo"
+                }
+              }
+            }
+          },
+          "required": true,
+          "x-position": 2
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/AddOrUpdateOpLog": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddOrUpdateOpLog",
+        "parameters": [
+          {
+            "name": "iRt",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "x-position": 1
+          },
+          {
+            "name": "log",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            },
+            "x-position": 2
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/GetFileData": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_GetFileData",
+        "parameters": [
+          {
+            "name": "path",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryPersonInfos": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryPersonInfos",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QuerySinglePersonInfos": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QuerySinglePersonInfos",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/AddOrUpdatePersonInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddOrUpdatePersonInfo",
+        "requestBody": {
+          "x-name": "info",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersonInfo"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/DelPersonInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_DelPersonInfo",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryPersonResources": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryPersonResources",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/DelPersonResource": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_DelPersonResource",
+        "parameters": [
+          {
+            "name": "resId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/AddPersonResources": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddPersonResources",
+        "requestBody": {
+          "x-name": "info",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersonResData"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/AddOrUpdateVideoGroupInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddOrUpdateVideoGroupInfo",
+        "requestBody": {
+          "x-name": "groupInfo",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VideoGroupInfo"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/DelVideoGroupInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_DelVideoGroupInfo",
+        "parameters": [
+          {
+            "name": "groupID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryVideoGroupInfo": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryVideoGroupInfo",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/AddOrUpdateMediaScene": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddOrUpdateMediaScene",
+        "requestBody": {
+          "x-name": "sceneInfo",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VideoSceneInfo"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/DelMediaScene": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_DelMediaScene",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryMediaScene": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryMediaScene",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryVideoLinkInfos": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryVideoLinkInfos",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/AddOrUpdateMapInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddOrUpdateMapInfo",
+        "requestBody": {
+          "x-name": "mapInfo",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MapParam"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/DelMapInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_DelMapInfo",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryMapInfo": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryMapInfo",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/AddOrUpdateMapRelConfigInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddOrUpdateMapRelConfigInfo",
+        "requestBody": {
+          "x-name": "confInfo",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MapRelKeyInfo"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/DelMapRelConfigInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_DelMapRelConfigInfo",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryMapRelConfigInfo/{id}": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryMapRelConfigInfo",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/AddOrUpdateAreaInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddOrUpdateAreaInfo",
+        "requestBody": {
+          "x-name": "areaInfo",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MapRelAreaInfo"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/DelAreaInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_DelAreaInfo",
+        "parameters": [
+          {
+            "name": "itemID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryAreaInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryAreaInfo",
+        "parameters": [
+          {
+            "name": "mapID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/AddOrUpdateMonitorPointInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddOrUpdateMonitorPointInfo",
+        "requestBody": {
+          "x-name": "monitorInfo",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MonitorInfo"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/DelMonitorPointInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_DelMonitorPointInfo",
+        "parameters": [
+          {
+            "name": "monitorID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryMonitorPointInfo": {
+      "get": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryMonitorPointInfo",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/ConfMonitorRelSrcInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_ConfMonitorRelSrcInfo",
+        "parameters": [
+          {
+            "name": "monitorId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "requestBody": {
+          "x-name": "relInfos",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/MonitorRelResourceInfo"
+                }
+              }
+            }
+          },
+          "required": true,
+          "x-position": 2
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryMonitorRelSrcInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryMonitorRelSrcInfo",
+        "parameters": [
+          {
+            "name": "monitorId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/AddOrUpdateMapRelMonitorInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_AddOrUpdateMapRelMonitorInfo",
+        "requestBody": {
+          "x-name": "relInfos",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MapRelMonitorInfo"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/DelMapRelMonitorInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_DelMapRelMonitorInfo",
+        "parameters": [
+          {
+            "name": "mapId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          },
+          {
+            "name": "monitorId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 2
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryMapRelMonitorInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryMapRelMonitorInfo",
+        "parameters": [
+          {
+            "name": "mapId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/ConfMapRelVideoSourceInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_ConfMapRelVideoSourceInfo",
+        "parameters": [
+          {
+            "name": "mapID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "requestBody": {
+          "x-name": "relInfos",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/MapRelResourceInfo"
+                }
+              }
+            }
+          },
+          "required": true,
+          "x-position": 2
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/STCS/QueryMapRelVideoSourceInfo": {
+      "post": {
+        "tags": [
+          "STCS"
+        ],
+        "operationId": "STCS_QueryMapRelVideoSourceInfo",
+        "parameters": [
+          {
+            "name": "mapID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "MapImportantDataInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "keyType": {
+            "$ref": "#/components/schemas/ImportantDataType"
+          },
+          "content": {
+            "type": "string",
+            "nullable": true
+          },
+          "param": {
+            "type": "string",
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "ImportantDataType": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "UserDef",
+          "Duty",
+          "Weather"
+        ],
+        "enum": [
+          0,
+          1,
+          2
+        ]
+      },
+      "AlarmTypeInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "isDelete": {
+            "type": "boolean"
+          },
+          "defType": {
+            "$ref": "#/components/schemas/DefType"
+          },
+          "alarmGroup": {
+            "$ref": "#/components/schemas/AlarmGroup"
+          },
+          "filePath": {
+            "type": "string",
+            "maxLength": 255,
+            "minLength": 0,
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "DefType": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "PreDef",
+          "UserDef"
+        ],
+        "enum": [
+          0,
+          1
+        ]
+      },
+      "AlarmGroup": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "Normal",
+          "Key",
+          "AudioWarning",
+          "GunWarning"
+        ],
+        "enum": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "AlarmSchemeInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "isDelete": {
+            "type": "boolean"
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "desc": {
+            "type": "string",
+            "nullable": true
+          },
+          "schemeItemList": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/AlarmSchemeItem"
+            }
+          }
+        }
+      },
+      "AlarmSchemeItem": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "alarmSchemeId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "isDelete": {
+            "type": "boolean"
+          },
+          "content": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 0,
+            "nullable": true
+          },
+          "path": {
+            "type": "string",
+            "maxLength": 255,
+            "minLength": 0,
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "AlarmSourceRelTypeInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "sourceId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "alarmTypeId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "alarmCls": {
+            "type": "string",
+            "nullable": true
+          },
+          "alarmTypeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isEnable": {
+            "type": "boolean"
+          },
+          "isNeedConfirm": {
+            "type": "boolean"
+          },
+          "invalidTime": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "alarmType": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/AlarmTypeInfo"
+              }
+            ]
+          },
+          "resource": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/ResourceInfo"
+              }
+            ]
+          }
+        }
+      },
+      "ResourceInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "isDelete": {
+            "type": "boolean"
+          },
+          "isEnable": {
+            "type": "boolean"
+          },
+          "isAlarmSource": {
+            "type": "boolean"
+          },
+          "devType": {
+            "$ref": "#/components/schemas/DevType"
+          },
+          "srcId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "index": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tag": {
+            "type": "string",
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "resKeyInfoList": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/ResourceRelKeyInfo"
+            }
+          }
+        }
+      },
+      "DevType": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "Unknown",
+          "AlarmLight",
+          "Camera",
+          "CameraGroup",
+          "GateCtrlTerm",
+          "MtsServer",
+          "Radar",
+          "FaceRecoServer",
+          "ElectronicGuard",
+          "MAS",
+          "AlarmAnalyseServer",
+          "ShakingOpticalDev",
+          "MidisServer",
+          "ShakeAlarm",
+          "SubServerSystem",
+          "NtpServer",
+          "LocationServer",
+          "WeatherStation",
+          "TargetDev",
+          "WifiGyro",
+          "BulletCtrler"
+        ],
+        "enum": [
+          0,
+          7,
+          14,
+          15,
+          19,
+          20,
+          21,
+          23,
+          25,
+          27,
+          32,
+          33,
+          35,
+          38,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48
+        ]
+      },
+      "ResourceRelKeyInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "srcId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "configKey": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "configValue": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 0,
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "resourceInfo": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/ResourceInfo"
+              }
+            ]
+          }
+        }
+      },
+      "AlarmLinkInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "alarmSourceID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "relTypeId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "linkModel": {
+            "$ref": "#/components/schemas/AlarmLinkMode"
+          },
+          "linkSrcId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "linkAction": {
+            "$ref": "#/components/schemas/LinkActionType"
+          },
+          "linkContent": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 0,
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "AlarmLinkMode": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "All",
+          "BeforeConfirm",
+          "AfterConfirm"
+        ],
+        "enum": [
+          0,
+          1,
+          2
+        ]
+      },
+      "LinkActionType": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "PlayVideo",
+          "Snap",
+          "Storage",
+          "SpeechNotify",
+          "TextNotify",
+          "SwitchOutput",
+          "TurnOnLight",
+          "EditPreview",
+          "MidisPreview"
+        ],
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "DeviceInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "isDelete": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "isEnable": {
+            "type": "boolean"
+          },
+          "devType": {
+            "$ref": "#/components/schemas/DevType"
+          },
+          "devSubType": {
+            "$ref": "#/components/schemas/DeviceSubType"
+          },
+          "vendor": {
+            "$ref": "#/components/schemas/DevVendor"
+          },
+          "capability": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "outCapability": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "transType": {
+            "$ref": "#/components/schemas/TransType"
+          },
+          "ip": {
+            "type": "string",
+            "maxLength": 255,
+            "minLength": 0,
+            "nullable": true
+          },
+          "port": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userName": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "tag": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "deviceResourceList": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/DevRelResourceInfo"
+            }
+          },
+          "devKeyInfoList": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/DevRelKeyInfo"
+            }
+          }
+        }
+      },
+      "DeviceSubType": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "Unknown",
+          "AlarmLight_SixColor",
+          "AlarmLight_FiveColor",
+          "AlarmLight_FourColor",
+          "Camera_GunCamera",
+          "Camera_BallCamera",
+          "Camera_EagleCamera",
+          "Camera_Nvr",
+          "Camera_Group",
+          "ElectronicGuard_Base",
+          "ElectronicGuard_Sub",
+          "GateCtrlTerm_Finger",
+          "GateCtrlTerm_Face",
+          "FaceRecoServer_DH",
+          "FaceRecoServer_HIK",
+          "MtsServer_100F",
+          "MtsServer_100M",
+          "MtsServer_110M",
+          "MtsServer_120M",
+          "AG_AlarmGateway",
+          "Radar_RsvRadar",
+          "Radar_38Radar",
+          "Radar_ProtocolRadar",
+          "Radar_HikPARadar",
+          "MAS_Base",
+          "MAS_Extent",
+          "AlarmAnalyseServer",
+          "ShakingOpticalDev",
+          "DutyDetectionDev",
+          "MidisServer_DW",
+          "MidisServer_CK",
+          "ExDevServerSystem",
+          "DevServerSystem",
+          "MediaServerSystem",
+          "TargetPracticeServerSystem",
+          "NtpServer",
+          "LocationServer_ZXW",
+          "WeatherStation",
+          "TargetDev_Target_Precision",
+          "TargetDev_Target_Hit",
+          "TargetDev_Target_ConductivePrecision",
+          "TargetDev_Mobile",
+          "BulletCtrler",
+          "BulletCtrlerDev"
+        ],
+        "enum": [
+          0,
+          200,
+          201,
+          202,
+          900,
+          901,
+          902,
+          925,
+          950,
+          1000,
+          1001,
+          1002,
+          1003,
+          1300,
+          1301,
+          1500,
+          1501,
+          1502,
+          1503,
+          1600,
+          1700,
+          1701,
+          1702,
+          1703,
+          1900,
+          1901,
+          2400,
+          2500,
+          2600,
+          2700,
+          2701,
+          3400,
+          3401,
+          3402,
+          3403,
+          3500,
+          3600,
+          3700,
+          3800,
+          3801,
+          3802,
+          3850,
+          4000,
+          4001
+        ]
+      },
+      "DevVendor": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "Vendor_Unkonw",
+          "Vendor_TOPZEN",
+          "Vendor_HIK",
+          "Vendor_DAHUA",
+          "Vendor_BOCONG",
+          "Vendor_HIS",
+          "Vendor_UNV",
+          "Vendor_Tiandy",
+          "Vendor_RY",
+          "Vendor_ZENO",
+          "Vendor_RSV",
+          "Vendor_CETC38",
+          "Vendor_ZKT",
+          "Vendor_ZXW",
+          "Vendor_Wr",
+          "Vendor_Br",
+          "Vendor_Wr3",
+          "Vendor_UnisYue",
+          "Vendor_IteaQ",
+          "Vendor_Sxw",
+          "Vendor_Kuanyao",
+          "Vendor_JG"
+        ],
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ]
+      },
+      "TransType": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "Protocol",
+          "SERIAL",
+          "USB",
+          "SubServer"
+        ],
+        "enum": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "DevRelResourceInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "resourcID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "resType": {
+            "$ref": "#/components/schemas/ResType"
+          },
+          "devID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "deviceInfo": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/DeviceInfo"
+              }
+            ]
+          }
+        }
+      },
+      "ResType": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "Dev",
+          "Resource",
+          "AlarmSource",
+          "VideoGroup",
+          "Unknow"
+        ],
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          -1
+        ]
+      },
+      "DevRelKeyInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "srcId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "configKey": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "configValue": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 0,
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "deviceInfo": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/DeviceInfo"
+              }
+            ]
+          }
+        }
+      },
+      "FileData": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "fileName": {
+            "type": "string",
+            "nullable": true
+          },
+          "fileType": {
+            "$ref": "#/components/schemas/FileType"
+          },
+          "data": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          },
+          "desc": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "FileType": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "PersonPic",
+          "PersonAuthData",
+          "Map",
+          "Snap",
+          "Storage",
+          "Audio",
+          "Target",
+          "TargetPicture",
+          "Other"
+        ],
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "ShootingGunTrackRecord": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "planId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "personId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "round": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "xAcceleratedSpeed": {
+            "type": "number",
+            "format": "double"
+          },
+          "xAngleSpeed": {
+            "type": "number",
+            "format": "double"
+          },
+          "xAngle": {
+            "type": "number",
+            "format": "double"
+          },
+          "yAcceleratedSpeed": {
+            "type": "number",
+            "format": "double"
+          },
+          "yAngleSpeed": {
+            "type": "number",
+            "format": "double"
+          },
+          "yAngle": {
+            "type": "number",
+            "format": "double"
+          },
+          "zAcceleratedSpeed": {
+            "type": "number",
+            "format": "double"
+          },
+          "zAngleSpeed": {
+            "type": "number",
+            "format": "double"
+          },
+          "zAngle": {
+            "type": "number",
+            "format": "double"
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "ShootingPlan": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "subjectId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "bulletNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "targetCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roundCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "planState": {
+            "$ref": "#/components/schemas/PlanState"
+          },
+          "targetAction": {
+            "$ref": "#/components/schemas/TargetActionType"
+          },
+          "carAction": {
+            "$ref": "#/components/schemas/TargetActionType"
+          },
+          "executionRound": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "startTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "canUsePersons": {
+            "type": "string",
+            "nullable": true
+          },
+          "desc": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 0,
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "targetSubject": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/TargetSubject"
+              }
+            ]
+          },
+          "relShootingPersonList": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/ShootingPerson"
+            }
+          },
+          "relShootingTargetList": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/ShootingTarget"
+            }
+          },
+          "relShootingActionList": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/ShootingTargetAction"
+            }
+          }
+        }
+      },
+      "PlanState": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "Create",
+          "Doing",
+          "Finish"
+        ],
+        "enum": [
+          0,
+          1,
+          2
+        ]
+      },
+      "TargetActionType": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "None",
+          "DownAction",
+          "StopAction"
+        ],
+        "enum": [
+          0,
+          1,
+          2
+        ]
+      },
+      "TargetSubject": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "subjectType": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "targetModel": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 0,
+            "nullable": true
+          },
+          "bulletCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "text": {
+            "type": "string",
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "ShootingPerson": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "round",
+          "targetIdx"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "planId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "round": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "targetIdx": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "personId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "desc": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 0,
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "shootingPlan": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/ShootingPlan"
+              }
+            ]
+          }
+        }
+      },
+      "ShootingTarget": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "planId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "targetIdx": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "targetModelId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "shootingPlan": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/ShootingPlan"
+              }
+            ]
+          }
+        }
+      },
+      "ShootingTargetAction": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "planId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "targetIdx": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "shootingAction": {
+            "$ref": "#/components/schemas/ShootingAction"
+          },
+          "param": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "pointTime": {
+            "type": "number",
+            "format": "double"
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "shootingPlan": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/ShootingPlan"
+              }
+            ]
+          }
+        }
+      },
+      "ShootingAction": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "PositiveTarget",
+          "ContraryTarget",
+          "Speed1ForwardStart",
+          "Speed2ForwardStart",
+          "Speed3ForwardStart",
+          "Speed4ForwardStart",
+          "BackwardStart",
+          "Stop",
+          "LightLevel0",
+          "LightLevel1",
+          "LightLevel2",
+          "LightLevel3",
+          "LightLevel4",
+          "LightLevel5"
+        ],
+        "enum": [
+          1,
+          2,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105
+        ]
+      },
+      "ShootingResultRecord": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "planId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "targetIdx": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "targetType": {
+            "$ref": "#/components/schemas/TargetType"
+          },
+          "targetModelId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "roundIdx": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "personId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "shootingGesture": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "shootingIdx": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isHit": {
+            "type": "boolean"
+          },
+          "code": {
+            "type": "number",
+            "format": "double"
+          },
+          "direction": {
+            "$ref": "#/components/schemas/TargetLoopPlace"
+          },
+          "x": {
+            "type": "number",
+            "format": "double"
+          },
+          "y": {
+            "type": "number",
+            "format": "double"
+          },
+          "isRecvPic": {
+            "type": "boolean"
+          },
+          "realPicX": {
+            "type": "number",
+            "format": "double"
+          },
+          "realPicY": {
+            "type": "number",
+            "format": "double"
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "TargetType": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "Precision",
+          "Area",
+          "Hit"
+        ],
+        "enum": [
+          0,
+          1,
+          2
+        ]
+      },
+      "TargetLoopPlace": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "CentrePlace",
+          "Up",
+          "RightUp",
+          "Right",
+          "RightDown",
+          "Down",
+          "LeftDown",
+          "Left",
+          "LeftUp",
+          "Error"
+        ],
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          -1
+        ]
+      },
+      "TargetModel": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "picPath": {
+            "type": "string",
+            "maxLength": 255,
+            "minLength": 0,
+            "nullable": true
+          },
+          "actionTag": {
+            "type": "string",
+            "nullable": true
+          },
+          "desc": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 0,
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "picData": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          }
+        }
+      },
+      "TargetVoiceParam": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "targetIdxs": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          "voiceData": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          }
+        }
+      },
+      "SendParam": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "session": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/SessionInfo"
+              }
+            ]
+          },
+          "targetIdxs": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        }
+      },
+      "SessionInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "sessionId": {
+            "type": "string",
+            "nullable": true
+          },
+          "sessionType": {
+            "$ref": "#/components/schemas/SessionType"
+          },
+          "ip": {
+            "type": "string",
+            "nullable": true
+          },
+          "port": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isLogin": {
+            "type": "boolean"
+          },
+          "isLoadResFinished": {
+            "type": "boolean"
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "loginTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "logoutTime": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "SessionType": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "Client_Mgr",
+          "Client_Station",
+          "Server",
+          "System",
+          "Target",
+          "Unkonw"
+        ],
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          -1
+        ]
+      },
+      "ShootingCountInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "occureTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "addr": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          },
+          "targetIdx": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "shootingCount": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "TargetCtrlParam": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "targetId": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          "command": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "param": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "TargetIdxCtrlParam": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "targetIdx": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "command": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "param": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "LoginParam": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "DevPersonParam": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "devs": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          "persons": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        }
+      },
+      "DevAudioParam": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "devs": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          "audios": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "PtzCmdParam": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "rscID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "ptzCmd": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ptzParam1": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ptzParam2": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ptzParam3": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ptzPreset": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "PlayParam": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "resId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "tm": {
+            "$ref": "#/components/schemas/MediaTransmitMode"
+          },
+          "st": {
+            "$ref": "#/components/schemas/MediaStreamType"
+          },
+          "dstIP": {
+            "type": "string",
+            "nullable": true
+          },
+          "dstPort": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "MediaTransmitMode": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "UDP",
+          "TCP"
+        ],
+        "enum": [
+          0,
+          1
+        ]
+      },
+      "MediaStreamType": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "MainStream",
+          "SubStream"
+        ],
+        "enum": [
+          0,
+          1
+        ]
+      },
+      "PreSchemeHandledParam": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "previewId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "previewItemId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "result": {
+            "$ref": "#/components/schemas/ErrorCode"
+          },
+          "desc": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "ErrorCode": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "Success",
+          "Failed",
+          "Nonexistent",
+          "ArgInvalid",
+          "ParamRepeat",
+          "InvalidType",
+          "NotSupport",
+          "ParamIsNull",
+          "PartSuccess",
+          "SystemBusy",
+          "FileOpConflict",
+          "RestartService",
+          "VersionNoAuth",
+          "SessionInvalid",
+          "SessionNotLogin",
+          "UserHasLogined",
+          "UserNonexistent",
+          "UserLoginDuplicated",
+          "UserInvalid",
+          "UserPasswdInvalid",
+          "UserNoPrivilege",
+          "UserGrpInvalid",
+          "UserGrpNonexistent",
+          "UserNameDup",
+          "CmdNotExist",
+          "DevOpFailed",
+          "DeviceOffline",
+          "DevNonexistent",
+          "DevIPAddrDup",
+          "DevBusy",
+          "NotInit",
+          "DevTimeout",
+          "StationSysIPRepeat",
+          "StationNoBulletBox",
+          "DoorCtrlHostNotConf",
+          "GunCtrlHostNotConf",
+          "DevCallNumDup",
+          "DevConnectFailed",
+          "DevSubServerOffline",
+          "DevSubServerVerionError",
+          "DBOperateFailed",
+          "DBCreateFailed",
+          "DBNullData",
+          "DBNonexistent",
+          "ConfigNotDel",
+          "EventIsNull",
+          "AlarmSrcNotEnable",
+          "PlanIsNull",
+          "PersonDisable",
+          "PersonDuplicate",
+          "OperationRepeat"
+        ],
+        "enum": [
+          0,
+          -255,
+          -254,
+          -253,
+          -252,
+          -251,
+          -250,
+          -249,
+          -248,
+          -247,
+          -246,
+          -245,
+          -244,
+          -243,
+          -242,
+          -241,
+          -240,
+          -239,
+          -238,
+          -237,
+          -236,
+          -235,
+          -234,
+          -233,
+          -232,
+          -231,
+          -230,
+          -229,
+          -228,
+          -227,
+          -226,
+          -225,
+          -224,
+          -223,
+          -222,
+          -221,
+          -220,
+          -219,
+          -218,
+          -217,
+          -216,
+          -215,
+          -214,
+          -213,
+          -212,
+          -211,
+          -210,
+          -209,
+          -208,
+          -207,
+          -206
+        ]
+      },
+      "MessageParam": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "itemId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "user": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        }
+      },
+      "UserInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0
+          },
+          "isDelete": {
+            "type": "boolean"
+          },
+          "isEnable": {
+            "type": "boolean"
+          },
+          "userGroupId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "password": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "relPersonName": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "relPersonId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "encodeType": {
+            "$ref": "#/components/schemas/PwEncodeType"
+          },
+          "encodeParam": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "loginCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "lastLoginTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "lastLoginAddr": {
+            "type": "string",
+            "maxLength": 255,
+            "minLength": 0,
+            "nullable": true
+          },
+          "tag": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "userGroupInfo": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/UserGroupInfo"
+              }
+            ]
+          }
+        }
+      },
+      "PwEncodeType": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "MD5"
+        ],
+        "enum": [
+          0
+        ]
+      },
+      "UserGroupInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0
+          },
+          "isDelete": {
+            "type": "boolean"
+          },
+          "isEnable": {
+            "type": "boolean"
+          },
+          "defType": {
+            "$ref": "#/components/schemas/DefType"
+          },
+          "desc": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 0,
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "purviewList": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/UserGroupPurview"
+            }
+          },
+          "userInfos": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/UserInfo"
+            }
+          }
+        }
+      },
+      "UserGroupPurview": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "userGroupID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "purviewKey": {
+            "type": "string",
+            "nullable": true
+          },
+          "purviewDesc": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "userGroupInfo": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/UserGroupInfo"
+              }
+            ]
+          }
+        }
+      },
+      "SystemKeyInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "cfgKey": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "cfgValue": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 0,
+            "nullable": true
+          },
+          "cfgGroup": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "desc": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 0,
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "SystemResourceInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "configValue": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "param": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 0,
+            "nullable": true
+          },
+          "configGroup": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "PersonInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0
+          },
+          "tag": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "isDelete": {
+            "type": "boolean"
+          },
+          "isEnable": {
+            "type": "boolean"
+          },
+          "personType": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "personPurview": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "orgId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "department": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "position": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "personState": {
+            "$ref": "#/components/schemas/WorkStateType"
+          },
+          "personNum": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "sex": {
+            "$ref": "#/components/schemas/SexType"
+          },
+          "nation": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "political": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "idCard": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "maxLength": 255,
+            "minLength": 0,
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "description": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 0,
+            "nullable": true
+          },
+          "relConfigList": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/PersonRelKeyInfo"
+            }
+          },
+          "relDataList": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/PersonRelResourceInfo"
+            }
+          }
+        }
+      },
+      "WorkStateType": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "Unkonw",
+          "OnTheJob",
+          "BeOnLeave",
+          "AssembleForTraining",
+          "ExecutionTask",
+          "Retired"
+        ],
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "SexType": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "Male",
+          "Female"
+        ],
+        "enum": [
+          0,
+          1
+        ]
+      },
+      "PersonRelKeyInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "srcID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "configKey": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "configValue": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 0,
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "personInfo": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/PersonInfo"
+              }
+            ]
+          }
+        }
+      },
+      "PersonRelResourceInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "personId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "dataTag": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dataType": {
+            "$ref": "#/components/schemas/PersonDataType"
+          },
+          "dataIndex": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vendor": {
+            "$ref": "#/components/schemas/DevVendor"
+          },
+          "dataPath": {
+            "type": "string",
+            "maxLength": 255,
+            "minLength": 0,
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "personInfo": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/PersonInfo"
+              }
+            ]
+          }
+        }
+      },
+      "PersonDataType": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "FACE",
+          "FINGER",
+          "IRIS",
+          "PASSWD",
+          "CARD",
+          "PHOTO",
+          "FINGER_PHOTO",
+          "UNKONW"
+        ],
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          -1
+        ]
+      },
+      "PersonResData": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "personId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "dataType": {
+            "$ref": "#/components/schemas/PersonDataType"
+          },
+          "dataIndex": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vendor": {
+            "$ref": "#/components/schemas/DevVendor"
+          },
+          "data": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          }
+        }
+      },
+      "VideoGroupInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0
+          },
+          "groupType": {
+            "$ref": "#/components/schemas/VideoGroupType"
+          },
+          "interval": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "content": {
+            "type": "string",
+            "nullable": true
+          },
+          "tag": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "VideoGroupType": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "All",
+          "Client",
+          "Station"
+        ],
+        "enum": [
+          0,
+          1,
+          2
+        ]
+      },
+      "VideoSceneInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0
+          },
+          "isUsed": {
+            "type": "boolean"
+          },
+          "defType": {
+            "$ref": "#/components/schemas/DefType"
+          },
+          "windowCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "content": {
+            "type": "string",
+            "nullable": true
+          },
+          "userID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "MapParam": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "mapInfo": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/MapInfo"
+              }
+            ]
+          },
+          "mapData": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          }
+        }
+      },
+      "MapInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "type": {
+            "$ref": "#/components/schemas/ClientMapType"
+          },
+          "mapPicPath": {
+            "type": "string",
+            "maxLength": 255,
+            "minLength": 0,
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "desc": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 0,
+            "nullable": true
+          },
+          "mapRelAreaInfoList": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/MapRelAreaInfo"
+            }
+          },
+          "mapRelMonitorInfoList": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/MapRelMonitorInfo"
+            }
+          }
+        }
+      },
+      "ClientMapType": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "TwoD"
+        ],
+        "enum": [
+          0
+        ]
+      },
+      "MapRelAreaInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "mapID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "areaType": {
+            "$ref": "#/components/schemas/AreaType"
+          },
+          "param": {
+            "type": "string",
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "mapInfo": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/MapInfo"
+              }
+            ]
+          }
+        }
+      },
+      "AreaType": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "Building",
+          "Label"
+        ],
+        "enum": [
+          0,
+          1
+        ]
+      },
+      "MapRelMonitorInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "mapID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "monitorID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "posX": {
+            "type": "number",
+            "format": "double"
+          },
+          "posY": {
+            "type": "number",
+            "format": "double"
+          },
+          "posZ": {
+            "type": "number",
+            "format": "double"
+          },
+          "areaInfo": {
+            "type": "string",
+            "nullable": true
+          },
+          "featureInfo": {
+            "type": "string",
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "mapInfo": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/MapInfo"
+              }
+            ]
+          },
+          "monitorInfo": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/MonitorInfo"
+              }
+            ]
+          }
+        }
+      },
+      "MonitorInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0
+          },
+          "isDelete": {
+            "type": "boolean"
+          },
+          "isEnable": {
+            "type": "boolean"
+          },
+          "label": {
+            "type": "string",
+            "maxLength": 128,
+            "nullable": true
+          },
+          "desc": {
+            "type": "string",
+            "maxLength": 128,
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "MapRelKeyInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "srcID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "configKey": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 0,
+            "nullable": true
+          },
+          "configValue": {
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 0,
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "mapInfo": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/MapInfo"
+              }
+            ]
+          }
+        }
+      },
+      "MonitorRelResourceInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "monitorID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "resourceID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "resType": {
+            "$ref": "#/components/schemas/ResType"
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "monitorInfo": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/MonitorInfo"
+              }
+            ]
+          },
+          "resourceInfo": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/ResourceInfo"
+              }
+            ]
+          }
+        }
+      },
+      "MapRelResourceInfo": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "mapID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "resType": {
+            "$ref": "#/components/schemas/ResType"
+          },
+          "resID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "param": {
+            "type": "string",
+            "nullable": true
+          },
+          "occurTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifyTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "mapInfo": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/MapInfo"
+              }
+            ]
+          },
+          "resourceInfo": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/ResourceInfo"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "JWT": {
+        "type": "apiKey",
+        "description": "Type into the textbox: Bearer {your JWT token}.",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "JWT": []
+    }
+  ]
+}
